@@ -1,0 +1,67 @@
+[{
+  "name": "Controller Quiz",
+  "code": "CTRL",
+  "tests": [
+
+    {
+      "description": "Brick Controller has a 'color' property that is 'Green'",
+      "definition": {
+        "waitForEvent": "brick-color",
+        "exists": true
+      }
+    },
+    {
+      "description": "Brick Controller has a 'size' property that is '2 x 6'",
+      "definition": {
+        "waitForEvent": "brick-size",
+        "exists": true
+      }
+    },
+    {
+      "description": "Brick Controller has a 'price' property that is 0.03",
+      "definition": {
+        "waitForEvent": "brick-price",
+        "exists": true
+      }
+    },
+    {
+      "description": "Brick Controller has a 'quantity' property that is 697",
+      "definition": {
+        "waitForEvent": "brick-quantity",
+        "exists": true
+      }
+    },
+    {
+      "description": "Brick Stats displays the word 'Green'",
+      "definition": {
+        "nodes": "#brick-color",
+        "get": "innerHTML",
+        "hasSubstring": "Green"
+      }
+    },
+    {
+      "description": "Brick Stats displays the word '2 x 6'",
+      "definition": {
+        "nodes": "#brick-size",
+        "get": "innerHTML",
+        "hasSubstring": "2 x 6"
+      }
+    },
+    {
+      "description": "Brick Stats displays the word 0.03",
+      "definition": {
+        "nodes": "#brick-price",
+        "get": "innerHTML",
+        "hasSubstring": "0.03"
+      }
+    },
+    {
+      "description": "Brick Stats displays the word 697",
+      "definition": {
+        "nodes": "#brick-quantity",
+        "get": "innerHTML",
+        "hasSubstring": "697"
+      }
+    }
+  ]
+}]
