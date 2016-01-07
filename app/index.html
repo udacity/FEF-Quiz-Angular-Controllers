@@ -50,7 +50,7 @@
     <div class="container">
       <div ng-include="'views/instructions.html'"></div>
 
-      <div id="brick-view" ng-include="'views/bricks.html'"></div>
+      <div id="brick-view" ng-include="'views/bricks.html'" ng-controller="BrickCtrl as brick"></div>
     </div>
 
     <div class="footer">
@@ -69,6 +69,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/brick.js"></script>
     <!-- endbuild -->
 </body>
 </html>
