@@ -35,6 +35,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .container-narrow > hr {
@@ -80,4 +81,12 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.footer:hover .glyphicon-heart::before {
+  color: red;
+}
+
+.glyphicon-heart::before {
+  transition: 0.25s color;
 }
